@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Blog | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">Mindful<span>Blog</span></a>
+                </div>
+                <nav>
+                    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <ul id="primary-navigation" class="primary-navigation">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#" onclick="loadPage('blog')">Blog</a></li>
+                        <li><a href="#" onclick="loadPage('about')">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="page-content">
+        <!-- Home Page Content -->
+        <section class="hero">
+            <div class="container">
+                <h1>Find your balance through mindful thoughts</h1>
+                <p>Explore articles on mindfulness, productivity, and balanced living</p>
+            </div>
+        </section>
+
+        <section class="featured-posts">
+            <div class="container">
+                <h2>Featured Articles</h2>
+                <div class="posts-grid">
+                    <article class="post-card" data-id="1">
+                        <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')"></div>
+                        <div class="post-content">
+                            <div class="post-tag">Mindfulness</div>
+                            <h3>Finding Peace in Daily Routines</h3>
+                            <p>Discover how simple daily habits can transform your mental well-being and create lasting inner peace.</p>
+                            <div class="post-meta">
+                                <span class="date">May 10, 2025</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                            <a href="#" class="read-more" onclick="loadArticle(1)">Read article</a>
+                        </div>
+                    </article>
+                    <article class="post-card" data-id="2">
+                        <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')"></div>
+                        <div class="post-content">
+                            <div class="post-tag">Productivity</div>
+                            <h3>The Art of Deep Work</h3>
+                            <p>Learn how focused work sessions can dramatically improve your productivity and creative output.</p>
+                            <div class="post-meta">
+                                <span class="date">May 8, 2025</span>
+                                <span class="read-time">8 min read</span>
+                            </div>
+                            <a href="#" class="read-more" onclick="loadArticle(2)">Read article</a>
+                        </div>
+                    </article>
+                    <article class="post-card" data-id="3">
+                        <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')"></div>
+                        <div class="post-content">
+                            <div class="post-tag">Balance</div>
+                            <h3>Finding Work-Life Harmony</h3>
+                            <p>Explore strategies for creating a meaningful balance between professional ambitions and personal fulfillment.</p>
+                            <div class="post-meta">
+                                <span class="date">May 5, 2025</span>
+                                <span class="read-time">6 min read</span>
+                            </div>
+                            <a href="#" class="read-more" onclick="loadArticle(3)">Read article</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Join our newsletter</h2>
+                <p>Get the latest articles and insights delivered to your inbox weekly</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div id="subscription-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Mindful<span>Blog</span></a>
+                </div>
+                <p>&copy; 2025 MindfulBlog. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
